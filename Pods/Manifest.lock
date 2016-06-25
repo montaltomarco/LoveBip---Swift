@@ -1,0 +1,43 @@
+PODS:
+  - Alamofire (3.4.1)
+  - Bolts (1.7.0):
+    - Bolts/AppLinks (= 1.7.0)
+    - Bolts/Tasks (= 1.7.0)
+  - Bolts/AppLinks (1.7.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.7.0)
+  - FastCoding (3.2.1)
+  - FBSDKCoreKit (4.12.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.12.0):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.12.0):
+    - FBSDKCoreKit
+  - Metawear-iOSAPI (2.5.0):
+    - Bolts/Tasks (~> 1.7)
+    - FastCoding (~> 3.2.1)
+  - NVActivityIndicatorView (2.8)
+  - SlideMenuControllerSwift (2.2.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.3)
+  - Bolts
+  - FBSDKCoreKit
+  - FBSDKLoginKit
+  - FBSDKShareKit
+  - Metawear-iOSAPI
+  - NVActivityIndicatorView
+  - SlideMenuControllerSwift
+
+SPEC CHECKSUMS:
+  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  Bolts: a0058fa3b331c5a1e4402d534f2dae36dbff31e4
+  FastCoding: ed46c83ba23d048aafa0251972a1e1fc1cfc58ed
+  FBSDKCoreKit: 6e56d5a2a64a755ad4efb5dbeee8f82fb1b99775
+  FBSDKLoginKit: 03f68a8d48c2c8bb81d7eb8097973d483543e1f6
+  FBSDKShareKit: df1491f064cffc8ebcc3fc8b71be94cc190c728e
+  Metawear-iOSAPI: b3bccdc41920087e9d9d2f43a7bddab076e32576
+  NVActivityIndicatorView: 6aba1dbbd893f615a9452c9e66ae46473e1ce092
+  SlideMenuControllerSwift: 16dac00b1aaad153e64fffb5d6969ab31ad88372
+
+COCOAPODS: 0.39.0

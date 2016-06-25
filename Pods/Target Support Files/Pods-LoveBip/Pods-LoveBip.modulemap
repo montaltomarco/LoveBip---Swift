@@ -1,0 +1,6 @@
+framework module Pods_LoveBip {
+  umbrella header "Pods-LoveBip-umbrella.h"
+
+  export *
+  module * { export * }
+}

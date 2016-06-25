@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C87B3481D1DABC900814B14 /* APIEmotions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C87B3471D1DABC900814B14 /* APIEmotions.swift */; };
+		0C87B34C1D1DAD1000814B14 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C87B34B1D1DAD1000814B14 /* MenuTableViewController.swift */; };
+		0C87B34E1D1F062200814B14 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C87B34D1D1F062200814B14 /* Utilities.swift */; };
+		0CAB9D4A1D18A253007A0E1F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAB9D491D18A253007A0E1F /* HomeViewController.swift */; };
+		0CB10F1E1D12ADD8009227DA /* ConnectJewelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB10F1D1D12ADD8009227DA /* ConnectJewelViewController.swift */; };
+		0CB10F211D12DCE0009227DA /* ConnectToUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB10F201D12DCE0009227DA /* ConnectToUserViewController.swift */; };
+		0CC171911D09670C00EB1DFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC171901D09670C00EB1DFF /* AppDelegate.swift */; };
+		0CC171961D09670C00EB1DFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC171941D09670C00EB1DFF /* Main.storyboard */; };
+		0CC171981D09670D00EB1DFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CC171971D09670D00EB1DFF /* Assets.xcassets */; };
+		0CC1719B1D09670D00EB1DFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC171991D09670D00EB1DFF /* LaunchScreen.storyboard */; };
+		0CC171A61D09670D00EB1DFF /* LoveBipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC171A51D09670D00EB1DFF /* LoveBipTests.swift */; };
+		0CC171B11D09670D00EB1DFF /* LoveBipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC171B01D09670D00EB1DFF /* LoveBipUITests.swift */; };
+		0CCCBA8D1D11545E00F187AC /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCCBA8C1D11545E00F187AC /* LaunchViewController.swift */; };
+		0CCCBA8F1D11559600F187AC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCCBA8E1D11559600F187AC /* LoginViewController.swift */; };
+		0CCCBA921D11AD2100F187AC /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCCBA911D11AD2100F187AC /* APIHandler.swift */; };
+		0CCCBA941D11B02E00F187AC /* APILoginSignup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCCBA931D11B02E00F187AC /* APILoginSignup.swift */; };
+		F636A503D092395ECE1697FD /* Pods_LoveBip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F68077613CF1B35271F222 /* Pods_LoveBip.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0CC171A21D09670D00EB1DFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CC171851D09670C00EB1DFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CC1718C1D09670C00EB1DFF;
+			remoteInfo = LoveBip;
+		};
+		0CC171AD1D09670D00EB1DFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CC171851D09670C00EB1DFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CC1718C1D09670C00EB1DFF;
+			remoteInfo = LoveBip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		036128F4E329C31EBF968890 /* Pods-LoveBip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoveBip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoveBip/Pods-LoveBip.debug.xcconfig"; sourceTree = "<group>"; };
+		0C87B3471D1DABC900814B14 /* APIEmotions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEmotions.swift; sourceTree = "<group>"; };
+		0C87B34B1D1DAD1000814B14 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		0C87B34D1D1F062200814B14 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		0CAB9D491D18A253007A0E1F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0CB10F1D1D12ADD8009227DA /* ConnectJewelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectJewelViewController.swift; sourceTree = "<group>"; };
+		0CB10F1F1D12B64C009227DA /* LoveBip-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LoveBip-Bridging-Header.h"; sourceTree = "<group>"; };
+		0CB10F201D12DCE0009227DA /* ConnectToUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectToUserViewController.swift; sourceTree = "<group>"; };
+		0CC1718D1D09670C00EB1DFF /* LoveBip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoveBip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CC171901D09670C00EB1DFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0CC171951D09670C00EB1DFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0CC171971D09670D00EB1DFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0CC1719A1D09670D00EB1DFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0CC1719C1D09670D00EB1DFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CC171A11D09670D00EB1DFF /* LoveBipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoveBipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CC171A51D09670D00EB1DFF /* LoveBipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveBipTests.swift; sourceTree = "<group>"; };
+		0CC171A71D09670D00EB1DFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CC171AC1D09670D00EB1DFF /* LoveBipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoveBipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CC171B01D09670D00EB1DFF /* LoveBipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveBipUITests.swift; sourceTree = "<group>"; };
+		0CC171B21D09670D00EB1DFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CCCBA8C1D11545E00F187AC /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		0CCCBA8E1D11559600F187AC /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0CCCBA911D11AD2100F187AC /* APIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
+		0CCCBA931D11B02E00F187AC /* APILoginSignup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APILoginSignup.swift; sourceTree = "<group>"; };
+		6F99799B3F7719BD611E2365 /* Pods-LoveBip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoveBip.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoveBip/Pods-LoveBip.release.xcconfig"; sourceTree = "<group>"; };
+		90F68077613CF1B35271F222 /* Pods_LoveBip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoveBip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CC1718A1D09670C00EB1DFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F636A503D092395ECE1697FD /* Pods_LoveBip.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CC1719E1D09670D00EB1DFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CC171A91D09670D00EB1DFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CC171841D09670C00EB1DFF = {
+			isa = PBXGroup;
+			children = (
+				0CC1718F1D09670C00EB1DFF /* LoveBip */,
+				0CC171A41D09670D00EB1DFF /* LoveBipTests */,
+				0CC171AF1D09670D00EB1DFF /* LoveBipUITests */,
+				0CC1718E1D09670C00EB1DFF /* Products */,
+				67FBD59173F8226DE90986BB /* Pods */,
+				9275690B91C516980E5A69AA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0CC1718E1D09670C00EB1DFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CC1718D1D09670C00EB1DFF /* LoveBip.app */,
+				0CC171A11D09670D00EB1DFF /* LoveBipTests.xctest */,
+				0CC171AC1D09670D00EB1DFF /* LoveBipUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0CC1718F1D09670C00EB1DFF /* LoveBip */ = {
+			isa = PBXGroup;
+			children = (
+				0CCCBA901D11ACCD00F187AC /* API */,
+				0C87B34D1D1F062200814B14 /* Utilities.swift */,
+				0CCCBA8C1D11545E00F187AC /* LaunchViewController.swift */,
+				0CB10F201D12DCE0009227DA /* ConnectToUserViewController.swift */,
+				0CCCBA8E1D11559600F187AC /* LoginViewController.swift */,
+				0CB10F1D1D12ADD8009227DA /* ConnectJewelViewController.swift */,
+				0C87B34B1D1DAD1000814B14 /* MenuTableViewController.swift */,
+				0CAB9D491D18A253007A0E1F /* HomeViewController.swift */,
+				0CC171901D09670C00EB1DFF /* AppDelegate.swift */,
+				0CC171941D09670C00EB1DFF /* Main.storyboard */,
+				0CC171971D09670D00EB1DFF /* Assets.xcassets */,
+				0CC1719C1D09670D00EB1DFF /* Info.plist */,
+				0CC171991D09670D00EB1DFF /* LaunchScreen.storyboard */,
+				0CB10F1F1D12B64C009227DA /* LoveBip-Bridging-Header.h */,
+			);
+			path = LoveBip;
+			sourceTree = "<group>";
+		};
+		0CC171A41D09670D00EB1DFF /* LoveBipTests */ = {
+			isa = PBXGroup;
+			children = (
+				0CC171A51D09670D00EB1DFF /* LoveBipTests.swift */,
+				0CC171A71D09670D00EB1DFF /* Info.plist */,
+			);
+			path = LoveBipTests;
+			sourceTree = "<group>";
+		};
+		0CC171AF1D09670D00EB1DFF /* LoveBipUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0CC171B01D09670D00EB1DFF /* LoveBipUITests.swift */,
+				0CC171B21D09670D00EB1DFF /* Info.plist */,
+			);
+			path = LoveBipUITests;
+			sourceTree = "<group>";
+		};
+		0CCCBA901D11ACCD00F187AC /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0CCCBA911D11AD2100F187AC /* APIHandler.swift */,
+				0CCCBA931D11B02E00F187AC /* APILoginSignup.swift */,
+				0C87B3471D1DABC900814B14 /* APIEmotions.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		67FBD59173F8226DE90986BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				036128F4E329C31EBF968890 /* Pods-LoveBip.debug.xcconfig */,
+				6F99799B3F7719BD611E2365 /* Pods-LoveBip.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9275690B91C516980E5A69AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90F68077613CF1B35271F222 /* Pods_LoveBip.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0CC1718C1D09670C00EB1DFF /* LoveBip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CC171B51D09670D00EB1DFF /* Build configuration list for PBXNativeTarget "LoveBip" */;
+			buildPhases = (
+				B3A250D31D40B36BCECDA839 /* Check Pods Manifest.lock */,
+				0CC171891D09670C00EB1DFF /* Sources */,
+				0CC1718A1D09670C00EB1DFF /* Frameworks */,
+				0CC1718B1D09670C00EB1DFF /* Resources */,
+				EBB9C32F4AF437F9721DA054 /* Embed Pods Frameworks */,
+				D2DB1CBE79392A900E133B53 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoveBip;
+			productName = LoveBip;
+			productReference = 0CC1718D1D09670C00EB1DFF /* LoveBip.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0CC171A01D09670D00EB1DFF /* LoveBipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CC171B81D09670D00EB1DFF /* Build configuration list for PBXNativeTarget "LoveBipTests" */;
+			buildPhases = (
+				0CC1719D1D09670D00EB1DFF /* Sources */,
+				0CC1719E1D09670D00EB1DFF /* Frameworks */,
+				0CC1719F1D09670D00EB1DFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0CC171A31D09670D00EB1DFF /* PBXTargetDependency */,
+			);
+			name = LoveBipTests;
+			productName = LoveBipTests;
+			productReference = 0CC171A11D09670D00EB1DFF /* LoveBipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0CC171AB1D09670D00EB1DFF /* LoveBipUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CC171BB1D09670D00EB1DFF /* Build configuration list for PBXNativeTarget "LoveBipUITests" */;
+			buildPhases = (
+				0CC171A81D09670D00EB1DFF /* Sources */,
+				0CC171A91D09670D00EB1DFF /* Frameworks */,
+				0CC171AA1D09670D00EB1DFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0CC171AE1D09670D00EB1DFF /* PBXTargetDependency */,
+			);
+			name = LoveBipUITests;
+			productName = LoveBipUITests;
+			productReference = 0CC171AC1D09670D00EB1DFF /* LoveBipUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0CC171851D09670C00EB1DFF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Marco Montalto";
+				TargetAttributes = {
+					0CC1718C1D09670C00EB1DFF = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5UVK4LXSY6;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					0CC171A01D09670D00EB1DFF = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 0CC1718C1D09670C00EB1DFF;
+					};
+					0CC171AB1D09670D00EB1DFF = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 0CC1718C1D09670C00EB1DFF;
+					};
+				};
+			};
+			buildConfigurationList = 0CC171881D09670C00EB1DFF /* Build configuration list for PBXProject "LoveBip" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0CC171841D09670C00EB1DFF;
+			productRefGroup = 0CC1718E1D09670C00EB1DFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0CC1718C1D09670C00EB1DFF /* LoveBip */,
+				0CC171A01D09670D00EB1DFF /* LoveBipTests */,
+				0CC171AB1D09670D00EB1DFF /* LoveBipUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0CC1718B1D09670C00EB1DFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CC1719B1D09670D00EB1DFF /* LaunchScreen.storyboard in Resources */,
+				0CC171981D09670D00EB1DFF /* Assets.xcassets in Resources */,
+				0CC171961D09670C00EB1DFF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CC1719F1D09670D00EB1DFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CC171AA1D09670D00EB1DFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B3A250D31D40B36BCECDA839 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D2DB1CBE79392A900E133B53 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LoveBip/Pods-LoveBip-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBB9C32F4AF437F9721DA054 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LoveBip/Pods-LoveBip-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CC171891D09670C00EB1DFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C87B3481D1DABC900814B14 /* APIEmotions.swift in Sources */,
+				0CB10F1E1D12ADD8009227DA /* ConnectJewelViewController.swift in Sources */,
+				0C87B34E1D1F062200814B14 /* Utilities.swift in Sources */,
+				0C87B34C1D1DAD1000814B14 /* MenuTableViewController.swift in Sources */,
+				0CCCBA8F1D11559600F187AC /* LoginViewController.swift in Sources */,
+				0CCCBA921D11AD2100F187AC /* APIHandler.swift in Sources */,
+				0CAB9D4A1D18A253007A0E1F /* HomeViewController.swift in Sources */,
+				0CCCBA8D1D11545E00F187AC /* LaunchViewController.swift in Sources */,
+				0CB10F211D12DCE0009227DA /* ConnectToUserViewController.swift in Sources */,
+				0CCCBA941D11B02E00F187AC /* APILoginSignup.swift in Sources */,
+				0CC171911D09670C00EB1DFF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CC1719D1D09670D00EB1DFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CC171A61D09670D00EB1DFF /* LoveBipTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CC171A81D09670D00EB1DFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CC171B11D09670D00EB1DFF /* LoveBipUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0CC171A31D09670D00EB1DFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0CC1718C1D09670C00EB1DFF /* LoveBip */;
+			targetProxy = 0CC171A21D09670D00EB1DFF /* PBXContainerItemProxy */;
+		};
+		0CC171AE1D09670D00EB1DFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0CC1718C1D09670C00EB1DFF /* LoveBip */;
+			targetProxy = 0CC171AD1D09670D00EB1DFF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0CC171941D09670C00EB1DFF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CC171951D09670C00EB1DFF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0CC171991D09670D00EB1DFF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CC1719A1D09670D00EB1DFF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0CC171B31D09670D00EB1DFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0CC171B41D09670D00EB1DFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0CC171B61D09670D00EB1DFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 036128F4E329C31EBF968890 /* Pods-LoveBip.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = LoveBip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.montalto.lovebip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./LoveBip/LoveBip-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		0CC171B71D09670D00EB1DFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F99799B3F7719BD611E2365 /* Pods-LoveBip.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = LoveBip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.montalto.lovebip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./LoveBip/LoveBip-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		0CC171B91D09670D00EB1DFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LoveBipTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MyCompany.LoveBipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoveBip.app/LoveBip";
+			};
+			name = Debug;
+		};
+		0CC171BA1D09670D00EB1DFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LoveBipTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MyCompany.LoveBipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoveBip.app/LoveBip";
+			};
+			name = Release;
+		};
+		0CC171BC1D09670D00EB1DFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LoveBipUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MyCompany.LoveBipUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LoveBip;
+			};
+			name = Debug;
+		};
+		0CC171BD1D09670D00EB1DFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LoveBipUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MyCompany.LoveBipUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LoveBip;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0CC171881D09670C00EB1DFF /* Build configuration list for PBXProject "LoveBip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CC171B31D09670D00EB1DFF /* Debug */,
+				0CC171B41D09670D00EB1DFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CC171B51D09670D00EB1DFF /* Build configuration list for PBXNativeTarget "LoveBip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CC171B61D09670D00EB1DFF /* Debug */,
+				0CC171B71D09670D00EB1DFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CC171B81D09670D00EB1DFF /* Build configuration list for PBXNativeTarget "LoveBipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CC171B91D09670D00EB1DFF /* Debug */,
+				0CC171BA1D09670D00EB1DFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CC171BB1D09670D00EB1DFF /* Build configuration list for PBXNativeTarget "LoveBipUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CC171BC1D09670D00EB1DFF /* Debug */,
+				0CC171BD1D09670D00EB1DFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0CC171851D09670C00EB1DFF /* Project object */;
+}
