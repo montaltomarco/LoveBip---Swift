@@ -19,7 +19,6 @@ class APILoginSignup {
                 } else {
                     print("Success registering user with facebook")
                 }
-                
                 completion(error: error)
             })
         }
@@ -50,7 +49,6 @@ class APILoginSignup {
         
         APIHandler.sendRequest(.POST, endpoint: "v1.0/pair/registerPair", authentication: authentication, queryParameters: params) { (json, statusCode, error) -> Void in
             dispatch_async(dispatch_get_main_queue(), {
-                completion(error: error)
                 
                 if let _ = error {
                     print("Failed to register your pair. Error: \(error)")
@@ -58,10 +56,9 @@ class APILoginSignup {
                     if let _ = json {
                         print("Paired with : " + (json!["userPairName"]!! as! String))
                         NSUserDefaults.standardUserDefaults().setObject(json!["userPairName"]!!, forKey: "userPairName")
-                        
-                        
                     }
                 }
+                completion(error: error)
             })
         }
         

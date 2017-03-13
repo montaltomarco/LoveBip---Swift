@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+
         
         // Override point for customization after application launch.
         let pushNotificationSettings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
@@ -96,7 +97,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     device.hapticBuzzer?.startHapticWithDutyCycleAsync(248, pulseWidth: 250, completion: {
                         device.led?.setLEDOnAsync(false, withOptions: 1)
                         
-                        Utilities.setTimeoutNoRepeat(1, block: {
+                        Utilities.setTimeoutNoRepeat(0.5, block: {
                             device.led?.setLEDColorAsync(UIColor.redColor(), withIntensity: 1)
                             device.hapticBuzzer?.startHapticWithDutyCycleAsync(248, pulseWidth: 250, completion: {
                                 device.led?.setLEDOnAsync(false, withOptions: 1)

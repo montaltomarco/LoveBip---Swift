@@ -15,7 +15,7 @@ class MenuTableViewController: UITableViewController {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
         switch (indexPath.row) {
-        case 1 :
+        case 0 :
             let userEmail = NSUserDefaults.standardUserDefaults().objectForKey("LoveBipUserEmail") as? String
             
             if let mail = userEmail {
@@ -25,6 +25,8 @@ class MenuTableViewController: UITableViewController {
                     }
                 })
             }
+        case 1 :
+            self.performSegueWithIdentifier("home_to_my_profile_segue", sender: self)
         default :
             print("Other case clicked")
         }

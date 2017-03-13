@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bAw-gD-DP4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OGm-lk-alU">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -467,7 +467,7 @@
                                 </state>
                                 <connections>
                                     <action selector="skipStepButtonTapped:" destination="6RU-Vh-nQi" eventType="touchUpInside" id="iPc-ox-ELv"/>
-                                    <segue destination="Sfo-df-FcB" kind="presentation" modalTransitionStyle="crossDissolve" id="f8T-4e-xjw"/>
+                                    <segue destination="Sfo-df-FcB" kind="presentation" identifier="connect_to_home_segue" modalTransitionStyle="crossDissolve" id="f8T-4e-xjw"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app-logo" translatesAutoresizingMaskIntoConstraints="NO" id="5H2-iB-Bmi">
@@ -614,6 +614,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="welcomeLabel" destination="1FW-QO-e2J" id="dQX-c7-PxU"/>
                         <segue destination="HxZ-AT-H8E" kind="presentation" identifier="logout_home_to_login_segue" modalTransitionStyle="crossDissolve" id="HgY-1G-Kyg"/>
                     </connections>
                 </viewController>
@@ -695,6 +696,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="eax-SD-Iha" kind="presentation" identifier="home_to_my_profile_segue" animates="NO" id="ZJM-uj-kdm"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="55" id="orX-Je-6dq">
                                         <rect key="frame" x="0.0" y="110" width="320" height="55"/>
@@ -833,7 +837,56 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nVQ-ig-ZBL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1526" y="1160"/>
+            <point key="canvasLocation" x="1582" y="1163"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cly-Nf-L9o">
+            <objects>
+                <viewController id="eax-SD-Iha" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g5u-kn-jrB"/>
+                        <viewControllerLayoutGuide type="bottom" id="6JT-gr-lB5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bOf-u7-sCz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8v8-93-kiq">
+                                <rect key="frame" x="0.0" y="519" width="320" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem title="Cane Dio" image="myProfile" id="b4t-de-bR0"/>
+                                    <tabBarItem systemItem="more" id="uK1-6e-Viu"/>
+                                    <tabBarItem title="Settings" image="settings" id="8Cw-at-dvP"/>
+                                </items>
+                            </tabBar>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="di2-4u-VOp">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="PAG-fI-AZ8"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.96078431369999995" green="0.7843137255" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="My profile" id="RkU-RN-ljl"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="di2-4u-VOp" secondAttribute="trailing" constant="-20" id="H79-3K-6te"/>
+                            <constraint firstItem="di2-4u-VOp" firstAttribute="top" secondItem="g5u-kn-jrB" secondAttribute="bottom" id="tKC-4L-g8e"/>
+                            <constraint firstItem="di2-4u-VOp" firstAttribute="leading" secondItem="bOf-u7-sCz" secondAttribute="leadingMargin" constant="-20" id="x9m-WF-7s6"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G0c-Kb-gcZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2100" y="1163"/>
         </scene>
     </scenes>
     <resources>
@@ -849,6 +902,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="DUr-rH-sp8"/>
-        <segue reference="HgY-1G-Kyg"/>
+        <segue reference="wTI-RL-386"/>
     </inferredMetricsTieBreakers>
 </document>

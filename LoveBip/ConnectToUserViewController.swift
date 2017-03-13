@@ -30,6 +30,7 @@ class ConnectToUserViewController: UIViewController, UITextFieldDelegate {
         registerButton.enabled = false
         registerButton.alpha = 0.5;
     }
+    
     @IBAction func registerToUser(sender: AnyObject) {
         
         let userEmail = NSUserDefaults.standardUserDefaults().objectForKey("LoveBipUserEmail") as? String
@@ -40,7 +41,7 @@ class ConnectToUserViewController: UIViewController, UITextFieldDelegate {
                 if let _ = error {
                     print("There was an error registering ")
                 } else {
-                    //self.performSegueWithIdentifier("login_to_home_segue", sender: self)
+                    self.performSegueWithIdentifier("connect_to_home_segue", sender: self)
                 }
             }
         }

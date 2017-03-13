@@ -170,6 +170,7 @@ class LoginViewController: UIViewController, NVActivityIndicatorViewable {
                     personalInfos["email"] = (result.objectForKey("email") as? String)!
                     
                     NSUserDefaults.standardUserDefaults().setObject(personalInfos["email"], forKey: "LoveBipUserEmail")
+                    NSUserDefaults.standardUserDefaults().setObject(personalInfos["first_name"], forKey: "userFirstName")
                     
                     APILoginSignup.loginWithFacebook(personalInfos["email"]!, queryParameters: personalInfos, completion: { (error) in
                         UIApplication.sharedApplication().networkActivityIndicatorVisible = false

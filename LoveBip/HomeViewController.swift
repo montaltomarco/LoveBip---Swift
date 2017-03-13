@@ -14,13 +14,33 @@ class HomeViewController: UIViewController {
     var touchPin: MBLGPIOPin = MBLGPIOPin()
     var timerTouch: NSTimer?
     var userEmail: String?
+    @IBOutlet weak var welcomeLabel: UILabel!
     
     override func viewDidLoad() {
+        
+        let userPairName = NSUserDefaults.standardUserDefaults().objectForKey("userPairName") as? String
+        let userFirstName = NSUserDefaults.standardUserDefaults().objectForKey("userFirstName") as? String
+
+        if let _ = userFirstName {
+            if let _ = userPairName {
+                welcomeLabel.text = "Salut " + userFirstName! + ", tu es connecté avec : " + userPairName!
+                if (userFirstName! == "Ludmila") {
+                    welcomeLabel.text = "Salut " + userFirstName! + ", tu es connectée avec : " + userPairName!
+                }
+            } else {
+                welcomeLabel.text = "Salut " + userFirstName! + ", connecte toi à ta moitié via les reglages"
+            }
+        } else {
+            welcomeLabel.text = "Error, plese login again"
+        }
         
         userEmail = NSUserDefaults.standardUserDefaults().objectForKey("LoveBipUserEmail") as? String
         
         if let _ = connectedBLEDevice {
             self.initTouchListener()
+            
+            //Listen to button pushed
+            self.initButtonListener()
         }
     }
     
@@ -63,7 +83,7 @@ class HomeViewController: UIViewController {
                 print(result!.value.boolValue)
                 if result!.value.boolValue == true {
                     let userEmail = NSUserDefaults.standardUserDefaults().objectForKey("LoveBipUserEmail") as? String
-                        
+                    
                     if let mail = userEmail {
                         APIEmotions.sendEmotions(mail, completion: { (error) in
                             if(error != nil) {
@@ -76,26 +96,12 @@ class HomeViewController: UIViewController {
         })
     }
     
-    override func viewWillAppear(animated: Bool) {
-
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(true)
-
-    }
-    
     @IBAction func signOutTapped(sender: AnyObject) {
-        
-        let userEmail = NSUserDefaults.standardUserDefaults().objectForKey("LoveBipUserEmail") as? String
-        
-        if let _ = userEmail {
-            let fbManager: FBSDKLoginManager = FBSDKLoginManager()
-            fbManager.logOut()
-            NSUserDefaults.standardUserDefaults().removeObjectForKey("LoveBipUserEmail")
-            
-            self.performSegueWithIdentifier("logout_home_to_login_segue", sender: self)
-            
-        }
+        let fbManager: FBSDKLoginManager = FBSDKLoginManager()
+        fbManager.logOut()
+        NSUserDefaults.standardUserDefaults().removeObjectForKey("LoveBipUserEmail")
+        NSUserDefaults.standardUserDefaults().removeObjectForKey("userPairName")
+        NSUserDefaults.standardUserDefaults().removeObjectForKey("userFirstName")
+        performSegueWithIdentifier("logout_home_to_login_segue", sender: self)
     }
 }

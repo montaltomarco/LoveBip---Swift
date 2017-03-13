@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LoveBip/APILoginSignup.swift"
-            timestampString = "488555995.527331"
+            timestampString = "488660624.671104"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "registerPair(_:emailPair:completion:)"
             landmarkType = "5">
          </BreakpointContent>
